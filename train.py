@@ -4,7 +4,7 @@ import torch.optim as optim
 from torchvision import models
 from strategy.suppressive_channel import apply_suppressive_dropout
 
-def train(model, dataloader, optimizer, criterion, device, epochs=5):
+def train(model, dataloader, optimizer, criterion, device, epochs=10):
     for epoch in range(epochs):
         model.train()
         total_loss = 0
